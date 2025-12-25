@@ -61,3 +61,8 @@ main {
   flex-wrap: wrap;
   gap: 0.5rem;
 }
+
+.collage-img {
+  max-width: 20rem;
+  max-height: 10rem;
+}
