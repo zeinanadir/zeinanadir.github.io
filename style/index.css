@@ -1,10 +1,10 @@
 * {
   padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 
 html {
+  margin: 1rem;
   scroll-behavior: smooth;
 }
 
@@ -12,12 +12,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 3fr;
   font-family: 'Poppins', sans-serif;
-  align-items: center;
   height: 100vh;
-}
-
-header {
-  margin: auto 0;
 }
 
 .nav {
@@ -35,7 +30,7 @@ header {
 .nav h2 {
   color: rgb(114, 109, 109);
   font-weight: 100;
-  font-size: 0.6rem;
+  font-size: 0.75rem;
 }
 
 .nav-links {
@@ -56,13 +51,12 @@ main {
 }
 
 .collage {
-  list-style: none;
   display: flex;
-  flex-wrap: wrap;
   gap: 0.5rem;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
 }
 
 .collage-img {
-  max-width: 20rem;
-  max-height: 10rem;
+  width: 100%;
 }
