@@ -8,7 +8,7 @@ const collage = document.querySelector('#collage');
 let numColumns = null;
 const calculateNumColumns = () => {
   const width = collage.offsetWidth;
-  return Math.trunc(width / MIN_PHOTO_SIZE_PX);
+  return Math.trunc(width / MIN_PHOTO_SIZE_PX) || 1;
 };
 
 const populateCollage = () => {
@@ -31,7 +31,6 @@ const populateCollage = () => {
     .fill(null)
     .map((_) => document.createElement('div'));
   columns.forEach((column, i) => {
-    console.log(column);
     column.classList.add('collage-column', i);
     collage.appendChild(column);
   });
