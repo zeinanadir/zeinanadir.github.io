@@ -1,0 +1,19 @@
+---
+layout: page
+title: Articles
+permalink: /articles/
+---
+{% for article_hash in site.data.articles %}
+  {% assign article_set = article_hash[1] %}
+  <h2>{{ article_set.label }}</h2>
+
+  <div class="article-cards">
+  {% for article in article_set.members %}
+    <a class="article-card" href="{{article.url}}">
+      <img src="{{article.image_url}}" loading="lazy" alt="Article top image">
+      <h3>{{ article.title }}</h3>
+      <p>{{ article.publish_date }}</p>
+    </a>
+  {% endfor %}
+  </div>
+{% endfor %}

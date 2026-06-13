@@ -1,0 +1,25 @@
+<footer class="site-footer h-card">
+  <div class="footer-col">
+    © {{ site.author }}
+    <ul class="contact-list">
+      <li>
+        Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </li>
+      <li>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">{{ site.linkedin_username }}</a>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="page-links">
+    {%- for title in site.nav_pages -%}
+      {%- assign my_page = site.pages | where: 'title', title | first -%}
+      {%- if my_page.title -%}
+        <li>
+          <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        </li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+</footer>
