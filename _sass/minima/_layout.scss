@@ -51,6 +51,11 @@
     color: $text-color;
     font-weight: 600;
     font-size: $md-font-size;
+
+    &:hover,
+    &:focus {
+      border-bottom: $text-color 2px solid;
+    }
   }
 
   @include media-query($on-palm) {
