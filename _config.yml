@@ -22,17 +22,17 @@ title: Zeina Nadir Mohammed
 author: Zeina Nadir Mohammed
 email: zeinanadir@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  journalist. geographer. zola.
-domain: my-site.github.io
+  journalist. anthropologist. zola.
+domain: zeinanadir.github.io
 baseurl: '/' # the subpath of your site, e.g. /blog
-url: https://my-site.github.io # the base hostname & protocol for your site, e.g. http://example.com
+url: https://zeinanadir.github.io # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: zeinanadir
-cv_url: https://docs.google.com/document/d/1qTs2P5SBJXMpwUZw5cfGEMckRMRdipvs/edit?usp=sharing&ouid=108253544684780629847&rtpof=true&sd=trues
+cv_url: https://docs.google.com/document/d/1qTs2P5SBJXMpwUZw5cfGEMckRMRdipvs/edit?usp=sharing&ouid=108253544684780629847&rtpof=true&sd=true
 nav_pages:
-  - About
-  - Articles
+  - Home
+  - Bio
+  - Publications
   - Events
-  - Blog
 
 # Build settings
 plugins:
